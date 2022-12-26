@@ -35,6 +35,10 @@
   --max-width: 1240px;
 }
 
+/* SMOOTH SCROLL */
+html {
+  scroll-behavior: smooth;
+}
 
 /* RESET */
 * {
