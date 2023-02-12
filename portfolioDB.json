@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "path": "./assets/portfolio/img-1.jpg",
+    "type": "Commercial"
+  },
+  {
+    "id": 2,
+    "path": "./assets/portfolio/img-2.jpg",
+    "type": "Commercial"
+  },
+  {
+    "id": 3,
+    "path": "./assets/portfolio/img-3.jpg",
+    "type": "Commercial"
+  },
+  {
+    "id": 4,
+    "path": "./assets/portfolio/img-4.jpg",
+    "type": "Residential"
+  },
+  {
+    "id": 5,
+    "path": "./assets/portfolio/img-5.jpg",
+    "type": "Residential"
+  },
+  {
+    "id": 6,
+    "path": "./assets/portfolio/img-6.jpg",
+    "type": "Office"
+  },
+  {
+    "id": 7,
+    "path": "./assets/portfolio/img-7.jpg",
+    "type": "Office"
+  },
+  {
+    "id": 8,
+    "path": "./assets/portfolio/img-8.jpg",
+    "type": "Office"
+  }
+]

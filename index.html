@@ -14,165 +14,189 @@
   <header>
 
     <!-- NAVBAR -->
-    <nav id="navbar">
-      <div class="navbar-container">
+    <nav class="navbar">
+      <div class="navbar__container">
 
-        <div class="content-left">
+        <div class="navbar__col__left">
           <div class="logo">
-            <img src="./assets/logo.svg" alt="logo">
+            <a href="#navbar">
+              <img src="./assets/logo.svg" alt="logo">
+            </a>
           </div>
-          <ul class="menu">
-            <li class="menu-item"><a href="#services">Services</a></li>
-            <li class="menu-item"><a href="#portfolio">Portfolio</a></li>
-            <li class="menu-item"><a href="#pricing">Pricing</a></li>
+
+          <ul class="navbar__menu">
+            <li class="navbar__item"><a class="navbar__link" href="#services">Services</a></li>
+            <li class="navbar__item"><a class="navbar__link" href="#portfolio">Portfolio</a></li>
+            <li class="navbar__item"><a class="navbar__link" href="#plans">Plans</a></li>
           </ul>
         </div>
 
-        <div class="content-right">
-          <p class="phone">(303) 555-0105</p>
-          <div class="language">
-            <span>EN</span>
-            <img src="./assets/triangle.svg" alt="triangle arrow">
+        <div class="navbar__col__right">
+          <p class="navbar__phone">(303) 555-0105</p>
+          <div class="navbar__lang">
+            <span class="navbar__lang__en">EN</span>
+            <span class="navbar__lang__es">CL</span>
+            <img class="navbar__lang__icon" src="./assets/triangle.svg" alt="triangle arrow">
           </div>
         </div>
 
-        <div class="mobile-menu">
-          <img src="./assets/mobile-menu-icon.svg" alt="Mobile menu icon">
+        <div class="navbar__menu__icons">
+          <img class="menu-outline" src="./assets/menu-outline.svg" alt="Mobile menu icon">
+          <img class="close-outline" src="./assets/close-outline.svg" alt="Mobile menu icon">
         </div>
 
       </div>
     </nav>
 
-    <!-- SHOWCASE -->
-    <div id="showcase">
-      <div class="showcase-container">
-        <div class="content">
-          <h1 class="title">We create your space better</h1>
-          <p class="lead">
-            Our team creates comfortable spaces for our clients. We've been designing your everyday life and work
-            through great ideas since 1999.
-          </p>
-          <a href="#" class="btn-primary">GET STARTED</a>
+    <!-- HERO -->
+    <div class="hero">
+      <div class="hero__container">
+        <div class="hero__content">
+          <div class="hero__texts">
+            <h1 class="hero__title">We create your space better</h1>
+            <p class="hero__copy">
+              Our team creates comfortable spaces for our clients. We've been designing your everyday life and work
+              through great ideas since 1999.
+            </p>
+          </div>
+
+          <div>
+            <a class="btn__primary" href="#">GET STARTED</a>
+          </div>
         </div>
+
       </div>
     </div>
 
-    <div class="showcase-img"></div>
+    <div class="hero__img"></div>
 
   </header>
 
   <!-- ABOUT -->
-  <section id="about">
-    <div class="about-container">
-      <div class="content-left">
-        <h2 class="title">About <span>Studio</span></h2>
+  <section class="about">
+    <div class="about__container">
+      <div class="about__col__left">
+        <h2 class="about__heading">About <span>Studio</span></h2>
       </div>
-      <div class="content-right">
-        <p class="copy">
-          Interiart is an award-winning architecture and interior design practice based in NYC. We work internationally
+
+      <div class="about__col__right">
+        <p class="about__copy">
+          id Studio is an award-winning architecture and interior design practice based in NYC. We work internationally
           on
           projects of residential & commercial interior design that require a creative approach. Our talented and
           experienced designers leverage their knowledge and expertise to create unique and comfortable interiors for
           you.
         </p>
-        <p class="copy">
+        <p class="about__copy">
           Our team knows that interior design can be stressful for the client and we do our best to make it as easy as
           possible. We listen to your needs, ideas, and inputs. And most importantly, we make it exciting and enjoyable
           for our clients.
         </p>
+        <p class="about__read-more">READ MORE</p>
       </div>
     </div>
   </section>
 
   <!-- SERVICES -->
-  <section id="services">
-    <div class="container">
-      <div class="title">Our <span>Services</span></div>
+  <section class="services" id="services">
+    <div class="services__container">
+      <div class="services__heading">Our <span>Services</span></div>
 
-      <div class="boxes">
-        <div class="box">
-          <div class="box-img">
-            <img src="./assets/couch.svg" alt="a living">
+      <div class="services__cards">
+
+        <div class="services__card">
+          <div class="services__card__img">
+            <img src="./assets/couch.svg" alt="A couch and a lamp">
           </div>
-          <h3>INTERIOR DESIGN</h3>
-          <p>
-            Interior design services offer a vast variety of solutions for our clients' homes and offices.
-          </p>
+
+          <div class="services__card__texts">
+            <h3 class="services__card__title">INTERIOR DESIGN</h3>
+            <p class="services__card__copy">
+              Interior design services offer a vast variety of solutions for our clients' homes and offices.
+            </p>
+          </div>
         </div>
-        <div class="box">
-          <div class="box-img">
-            <img src="./assets/picture.svg" alt="a picture">
+
+        <div class="services__card">
+          <div class="services__card__img">
+            <img src="./assets/picture.svg" alt="A picture">
           </div>
-          <h3>DECORATIVE SERVICES</h3>
-          <p>
-            Our professional decorators will be happy to help you change your house's inner look.
-          </p>
+
+          <div class="services__card__texts">
+            <h3 class="services__card__title">DECORATIVE SERVICES</h3>
+            <p class="services__card__copy">
+              Our professional decorators will be happy to help you change your house's inner look.
+            </p>
+          </div>
         </div>
-        <div class="box">
-          <div class="box-img">
-            <img src="./assets/plan.svg" alt="a plan">
+
+        <div class="services__card">
+          <div class="services__card__img">
+            <img src="./assets/plan.svg" alt="A space plan">
           </div>
-          <h3>SPACE PLANNING</h3>
-          <p>
-            We create better interior experiences through our space planning services.
-          </p>
+
+          <div class="services__card__texts">
+            <h3 class="services__card__title">SPACE PLANNING</h3>
+            <p class="services__card__copy">
+              We create better interior experiences through our space planning services.
+            </p>
+          </div>
         </div>
-        <div class="box">
-          <div class="box-img">
-            <img src="./assets/pencil.svg" alt="a pencil">
+
+        <div class="services__card">
+          <div class="services__card__img">
+            <img src="./assets/pencil.svg" alt="A pencil">
           </div>
-          <h3>PROJECT MANAGEMENT</h3>
-          <p>
-            We provide proper project management as it's one of the main success factorsin interior design.
-          </p>
+
+          <div class="services__card__texts">
+            <h3 class="services__card__title">PROJECT MANAGEMENT</h3>
+            <p class="services__card__copy">
+              We provide proper project management as it's one of the main success factorsin interior design.
+            </p>
+          </div>
         </div>
       </div>
 
-      <div class="btn-container">
-        <a href="#" class="btn-primary">FREE CONSULTATION</a>
-      </div>
+      <a href="#" class="btn__primary">FREE CONSULTATION</a>
     </div>
   </section>
 
   <!-- PORTFOLIO -->
-  <section id="portfolio">
-    <div class="container">
-      <div class="title">Our <span>Portfolio</span></div>
-      <div class="gallery">
-        <div class="gallery-menu">
-          <ul>
-            <li class="current">ALL</li>
-            <li>COMERCIAL</li>
-            <li>RESIDENTIAL</li>
-            <li>OFFICE</li>
-            <li>OTHER</li>
-          </ul>
-          <a href="#" class="link">VIEW MORE</a>
-        </div>
-        <div class="gallery-images">
-          <div class="gallery-item">
-            <img src="./assets/portfolio/img-1.jpg" alt="project-1">
+  <section id="portfolio" class="portfolio">
+    <div class="portfolio__container">
+      <div class="portfolio__heading">Our <span>Portfolio</span></div>
+      <div class="portfolio__gallery">
+        <ul class="portfolio__menu">
+          <li class="portfolio__menu__item current" id="all">ALL</li>
+          <li class="portfolio__menu__item" id="commercial">COMMERCIAL</li>
+          <li class="portfolio__menu__item" id="residential">RESIDENTIAL</li>
+          <li class="portfolio__menu__item" id="office">OFFICE</li>
+        </ul>
+
+        <div class="portfolio__images">
+          <div class="portfolio__image__wrapper">
+            <img class="portfolio__image" src="./assets/portfolio/img-1.jpg" alt="project-1">
           </div>
-          <div class="gallery-item">
-            <img src="./assets/portfolio/img-2.jpg" alt="project-2">
+          <div class="portfolio__image__wrapper">
+            <img class="portfolio__image" src="./assets/portfolio/img-2.jpg" alt="project-2">
           </div>
-          <div class="gallery-item">
-            <img src="./assets/portfolio/img-3.jpg" alt="project-3">
+          <div class="portfolio__image__wrapper">
+            <img class="portfolio__image" src="./assets/portfolio/img-3.jpg" alt="project-3">
           </div>
-          <div class="gallery-item">
-            <img src="./assets/portfolio/img-4.jpg" alt="project-4">
+          <div class="portfolio__image__wrapper">
+            <img class="portfolio__image" src="./assets/portfolio/img-4.jpg" alt="project-4">
           </div>
-          <div class="gallery-item">
-            <img src="./assets/portfolio/img-5.jpg" alt="project-5">
+          <div class="portfolio__image__wrapper">
+            <img class="portfolio__image" src="./assets/portfolio/img-5.jpg" alt="project-5">
           </div>
-          <div class="gallery-item">
-            <img src="./assets/portfolio/img-6.jpg" alt="project-6">
+          <div class="portfolio__image__wrapper">
+            <img class="portfolio__image" src="./assets/portfolio/img-6.jpg" alt="project-6">
           </div>
-          <div class="gallery-item">
-            <img src="./assets/portfolio/img-7.jpg" alt="project-7">
+          <div class="portfolio__image__wrapper">
+            <img class="portfolio__image" src="./assets/portfolio/img-7.jpg" alt="project-7">
           </div>
-          <div class="gallery-item">
-            <img src="./assets/portfolio/img-8.jpg" alt="project-8">
+          <div class="portfolio__image__wrapper">
+            <img class="portfolio__image" src="./assets/portfolio/img-8.jpg" alt="project-8">
           </div>
         </div>
       </div>
@@ -180,174 +204,282 @@
   </section>
 
   <!-- PRICING -->
-  <section id="pricing">
-    <div class="container">
-      <h2 class="title">Our <span>Pricing</span></h2>
-      <div class="cards">
+  <section id="plans" class="plans">
+    <div class="plans__container">
 
-        <div class="card">
-          <h3 class="card-title">Basic</h3>
-          <p class="card-price">$25</p>
-          <p class="card-period">per month</p>
-          <div class="card-divider"></div>
-          <ul class="card-list">
-            <li class="card-item-list">Interior Design</li>
-            <li class="card-item-list">Project Discussion</li>
-            <li class="card-item-list">Space Planning</li>
-            <li class="card-item-list">Online Consultation</li>
-          </ul>
-          <a href="#" class="btn-secondary">BUY NOW</a>
+      <h2 class="plans__heading">Our <span>Plans</span></h2>
+
+      <div class="plans__cards">
+
+        <div class="plans__card">
+          <div class="plans__card__wrapper">
+            <h3 class="plans__card__heading">Basic</h3>
+            <p class="plans__card__number">$25</p>
+            <p class="plans__card__period">per month</p>
+            <div class="plans__card__divisor"></div>
+            <ul class="plans__card__list">
+              <li class="plans__card__item">Interior Design</li>
+              <li class="plans__card__item">Project Discussion</li>
+              <li class="plans__card__item">Space Planning</li>
+              <li class="plans__card__item">Online Consultation</li>
+            </ul>
+          </div>
+          <a href="#none" class="btn__secondary btn__secondary--gold">BUY NOW</a>
         </div>
 
-        <div class="card current-bg current">
-          <h3 class="card-title current-text">Standard</h3>
-          <p class="card-price current-text">$50</p>
-          <p class="card-period current-text">per month</p>
-          <div class="card-divider current-bg-2"></div>
-          <ul class="card-list current-text">
-            <li class="card-item-list">Color Analysis</li>
-            <li class="card-item-list">Space Planning</li>
-            <li class="card-item-list">Home Remodeling</li>
-            <li class="card-item-list">3D Interior Model</li>
-          </ul>
-          <a href="#" class="btn-secondary current-btn">BUY NOW</a>
+        <div class="plans__card current">
+          <div class="plans__card__wrapper">
+            <h3 class="plans__card__heading">Standard</h3>
+            <p class="plans__card__number">$50</p>
+            <p class="plans__card__period">per month</p>
+            <div class="plans__card__divisor"></div>
+            <ul class="plans__card__list">
+              <li class="plans__card__item">Color Analysis</li>
+              <li class="plans__card__item">Space Planning</li>
+              <li class="plans__card__item">Home Remodeling</li>
+              <li class="plans__card__item">3D Interior Model</li>
+            </ul>
+          </div>
+          <a href="#none" class="btn__secondary btn__secondary--white">BUY NOW</a>
         </div>
 
-        <div class="card">
-          <h3 class="card-title">Premium</h3>
-          <p class="card-price">$80</p>
-          <p class="card-period">per month</p>
-          <div class="card-divider"></div>
-          <ul class="card-list">
-            <li class="card-item-list">Concept Development</li>
-            <li class="card-item-list">Decoration Services</li>
-            <li class="card-item-list">Interior Architecture</li>
-            <li class="card-item-list">Flooring Installation</li>
-          </ul>
-          <a href="#" class="btn-secondary">BUY NOW</a>
+        <div class="plans__card">
+          <div class="plans__card__wrapper">
+            <h3 class="plans__card__heading">Premium</h3>
+            <p class="plans__card__number">$80</p>
+            <p class="plans__card__period">per month</p>
+            <div class="plans__card__divisor"></div>
+            <ul class="plans__card__list">
+              <li class="plans__card__item">Concept Development</li>
+              <li class="plans__card__item">Decoration Services</li>
+              <li class="plans__card__item">Interior Architecture</li>
+              <li class="plans__card__item">Flooring Installation</li>
+              <li class="plans__card__item">Online Consultation</li>
+            </ul>
+          </div>
+          <a href="#none" class="btn__secondary btn__secondary--gold">BUY NOW</a>
         </div>
+
       </div>
     </div>
   </section>
 
   <!-- TESTIMONIALS -->
-  <section id="testimonials">
-    <div class="container">
-      <h2 class="title">What <span>People Say</span></h2>
-      <div class="cards">
-        <div class="card">
-          <div class="card-header">
-            <div class="customer-img">
+  <section id="testimonials" class="testimonials">
+    <div class="testimonials__container">
+      <h2 class="testimonials__heading">What <span>People Say</span></h2>
+
+      <div class="testimonials__cards">
+
+        <div class="testimonials__card">
+          <div class="testimonials__card__header">
+            <div class="testimonials__card__image">
               <img src="./assets/testimonials/annette.png" alt="a girl">
             </div>
-            <div class="card-info">
-              <div class="customer-name">Annette Black</div>
-              <div class="customer-job">Merchandising Associative</div>
-              <ul class="customer-rrss">
+            <div class="testimonials__card__texts">
+              <div class="testimonials__card__content">
+                <div class="testimonials__card__author">Annette Black</div>
+                <div class="testimonials__card__job">Merchandising Associative</div>
+              </div>
+              <ul class="testimonials__card__rrss">
                 <li><img src="./assets/twitter.svg" alt="twitter logo"></li>
                 <li><img src="./assets/linkedin.svg" alt="linkedin logo"></li>
                 <li><img src="./assets/facebook.svg" alt="facebook logo"></li>
               </ul>
             </div>
           </div>
-          <div class="card-body">
+          <div class="testimonials__card__body">
             Convallis non proin ac bibendum. At pharetra sed ultrices semper. Lectus et ornare ultrices urna in. Id non
             fringilla dignissim ac risus amet eget egestas vestibulum. Aliquet etiam eget nulla nulla odio vel.
           </div>
         </div>
 
-        <div class="card">
-          <div class="card-header">
-            <div class="customer-img">
-              <img src="./assets/testimonials/marvin.png" alt="a girl">
+        <div class="testimonials__card">
+          <div class="testimonials__card__header">
+            <div class="testimonials__card__image">
+              <img src="./assets/testimonials/marvin.png" alt="a man">
             </div>
-            <div class="card-info">
-              <div class="customer-name">Marvin McKinney</div>
-              <div class="customer-job">Administrator</div>
-              <ul class="customer-rrss">
+            <div class="testimonials__card__texts">
+              <div class="testimonials__card__content">
+                <div class="testimonials__card__author">Marvin McKinney</div>
+                <div class="testimonials__card__job">Administrator</div>
+              </div>
+              <ul class="testimonials__card__rrss">
                 <li><img src="./assets/twitter.svg" alt="twitter logo"></li>
                 <li><img src="./assets/linkedin.svg" alt="linkedin logo"></li>
                 <li><img src="./assets/facebook.svg" alt="facebook logo"></li>
               </ul>
             </div>
           </div>
-          <div class="card-body">
+          <div class="testimonials__card__body">
             Leo viverra vestibulum amet, scelerisque. Vitae, ultrices mi rhoncus porttitor nulla sed sodales. Curabitur
             tellus massa.
           </div>
         </div>
+
+        <div class="testimonials__card">
+          <div class="testimonials__card__header">
+            <div class="testimonials__card__image">
+              <img src="./assets/testimonials/jennifer.png" alt="a girl">
+            </div>
+            <div class="testimonials__card__texts">
+              <div class="testimonials__card__content">
+                <div class="testimonials__card__author">Jennifer Collings</div>
+                <div class="testimonials__card__job">Designer</div>
+              </div>
+              <ul class="testimonials__card__rrss">
+                <li><img src="./assets/twitter.svg" alt="twitter logo"></li>
+                <li><img src="./assets/linkedin.svg" alt="linkedin logo"></li>
+                <li><img src="./assets/facebook.svg" alt="facebook logo"></li>
+              </ul>
+            </div>
+          </div>
+          <div class="testimonials__card__body">
+            Leo viverra vestibulum amet, scelerisque. Vitae, ultrices mi rhoncus porttitor nulla sed sodales. Curabitur
+            tellus massa.
+          </div>
+        </div>
+
+        <div class="testimonials__card">
+          <div class="testimonials__card__header">
+            <div class="testimonials__card__image">
+              <img src="./assets/testimonials/pablo.png" alt="a man">
+            </div>
+            <div class="testimonials__card__texts">
+              <div class="testimonials__card__content">
+                <div class="testimonials__card__author">Pablo Bast</div>
+                <div class="testimonials__card__job">Developer</div>
+              </div>
+              <ul class="testimonials__card__rrss">
+                <li><img src="./assets/twitter.svg" alt="twitter logo"></li>
+                <li><img src="./assets/linkedin.svg" alt="linkedin logo"></li>
+                <li><img src="./assets/facebook.svg" alt="facebook logo"></li>
+              </ul>
+            </div>
+          </div>
+          <div class="testimonials__card__body">
+            Leo viverra vestibulum amet, scelerisque. Vitae, ultrices mi rhoncus porttitor nulla sed sodales. Curabitur
+            tellus massa.
+          </div>
+        </div>
+
+        <div class="testimonials__card">
+          <div class="testimonials__card__header">
+            <div class="testimonials__card__image">
+              <img src="./assets/testimonials/nadia.png" alt="a girl">
+            </div>
+            <div class="testimonials__card__texts">
+              <div class="testimonials__card__content">
+                <div class="testimonials__card__author">Nadia Gust</div>
+                <div class="testimonials__card__job">UI/UX Writer</div>
+              </div>
+              <ul class="testimonials__card__rrss">
+                <li><img src="./assets/twitter.svg" alt="twitter logo"></li>
+                <li><img src="./assets/linkedin.svg" alt="linkedin logo"></li>
+                <li><img src="./assets/facebook.svg" alt="facebook logo"></li>
+              </ul>
+            </div>
+          </div>
+          <div class="testimonials__card__body">
+            Leo viverra vestibulum amet, scelerisque. Vitae, ultrices mi rhoncus porttitor nulla sed sodales. Curabitur
+            tellus massa.
+          </div>
+        </div>
+
+        <div class="testimonials__card">
+          <div class="testimonials__card__header">
+            <div class="testimonials__card__image">
+              <img src="./assets/testimonials/steve.png" alt="a man">
+            </div>
+            <div class="testimonials__card__texts">
+              <div class="testimonials__card__content">
+                <div class="testimonials__card__author">Steve Kost</div>
+                <div class="testimonials__card__job">Software Engineer</div>
+              </div>
+              <ul class="testimonials__card__rrss">
+                <li><img src="./assets/twitter.svg" alt="twitter logo"></li>
+                <li><img src="./assets/linkedin.svg" alt="linkedin logo"></li>
+                <li><img src="./assets/facebook.svg" alt="facebook logo"></li>
+              </ul>
+            </div>
+          </div>
+          <div class="testimonials__card__body">
+            Leo viverra vestibulum amet, scelerisque. Vitae, ultrices mi rhoncus porttitor nulla sed sodales. Curabitur
+            tellus massa.
+          </div>
+        </div>
+
       </div>
 
-      <div class="circles">
-        <div class="circle current"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
+      <div class="testimonials__buttons">
+        <div class="testimonials__button current"></div>
+        <div class="testimonials__button"></div>
+        <div class="testimonials__button"></div>
       </div>
 
     </div>
   </section>
 
   <!-- CALL TO ACTION -->
-  <section id="cta">
-    <div class="container">
-      <h2 class="title">Do you have <span>any question?</span></h2>
-      <a href="#" class="btn-primary">ORDER A CALL</a>
+  <section id="cta" class="cta">
+    <div class="cta__container">
+      <h2 class="cta__heading">Do you have <span>any question?</span></h2>
+      <a href="#none" class="btn__primary">ORDER A CALL</a>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer id="footer">
-    <div class="container">
-      <div class="content-left">
+  <footer id="footer" class="footer">
+    <div class="footer__container">
+
+      <div class="footer__left">
         <div class="logo">
           <img src="./assets/logo.svg" alt="logo image">
         </div>
-        <ul class="rrss">
-          <li class="twitter"><img src="./assets/twitter.svg" alt="twitter logo"></li>
-          <li class="linkedin"><img src="./assets/linkedin.svg" alt="linkedin logo"></li>
-          <li class="facebook"><img src="./assets/facebook.svg" alt="facebook logo"></li>
-        </ul>
-        <div class="copy">
+        <div class="footer__copy">
           We are one of the leading interior design and remodeling studios available for all of your residential and
           commercial interior design needs.
         </div>
-        <p class="author">&copy; 2021 id Studio. All Rights Reserved.</p>
+        <p class="footer__author">&copy; 2023 idStudio. Developed by Javier Olivares. All Rights Reserved.</p>
       </div>
-      <div class="content-center">
-        <h3 class="title">NAVIGATION</h3>
-        <ul class="menu">
-          <li class="menu-item"><a href="#">About</a></li>
-          <li class="menu-item"><a href="#">Services</a></li>
-          <li class="menu-item"><a href="#">Portfolio</a></li>
-          <li class="menu-item"><a href="#">Pricing</a></li>
-          <li class="menu-item"><a href="#">Testimonials</a></li>
+
+      <div class="footer__center">
+        <ul class="footer__menu">
+          <h3 class="footer__menu__heading">NAVIGATION</h3>
+          <li class="footer__menu__item"><a class="footer__menu__link" href="#">About</a></li>
+          <li class="footer__menu__item"><a class="footer__menu__link" href="#">Services</a></li>
+          <li class="footer__menu__item"><a class="footer__menu__link" href="#">Portfolio</a></li>
+          <li class="footer__menu__item"><a class="footer__menu__link" href="#">Pricing</a></li>
+          <li class="footer__menu__item"><a class="footer__menu__link" href="#">Testimonials</a></li>
         </ul>
-        <ul class="rrss">
-          <li class="twitter"><img src="./assets/twitter.svg" alt="twitter logo"></li>
-          <li class="linkedin"><img src="./assets/linkedin.svg" alt="linkedin logo"></li>
-          <li class="facebook"><img src="./assets/facebook.svg" alt="facebook logo"></li>
+        <ul class="footer__rrss">
+          <li><img src="./assets/twitter.svg" alt="twitter logo"></li>
+          <li><img src="./assets/linkedin.svg" alt="linkedin logo"></li>
+          <li><img src="./assets/facebook.svg" alt="facebook logo"></li>
         </ul>
       </div>
-      <div class="content-right">
-        <h3 class="title">CONTACTS</h3>
-        <div class="address">
-          <h4>ADDRESS</h4>
-          <p>3517 W. Gray St. Utica, Pennsylvania 57867</p>
+
+      <div class="footer__right">
+        <h3 class="footer__contact__heading">CONTACTS</h3>
+        <div class="footer__address">
+          <h4 class="footer__address__heading">ADDRESS</h4>
+          <p class="footer__address__copy">3517 W. Gray St. Utica, Pennsylvania 57867</p>
         </div>
-        <div class="email">
-          <h4>EMAIL</h4>
-          <p>michelle.rivera@idstudio.com</p>
+        <div class="footer__address">
+          <h4 class="footer__address__heading">EMAIL</h4>
+          <p class="footer__address__copy">michelle.rivera@idstudio.com</p>
         </div>
-        <div class="phones">
-          <h4>PHONES</h4>
-          <p>(808) 555-0111 or (303) 555-0105</p>
+        <div class="footer__address">
+          <h4 class="footer__address__heading">PHONES</h4>
+          <p class="footer__address__copy">(808) 555-0111 or (303) 555-0105</p>
         </div>
       </div>
-      <p class="author-mobile">&copy; 2021 id Studio. All Rights Reserved.</p>
     </div>
   </footer>
 
+
+  <script src="./js/navbarLang.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
