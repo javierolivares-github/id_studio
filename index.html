@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/queries.css">
   <title>id Studio | Home</title>
 </head>
 
@@ -33,11 +34,10 @@
 
         <div class="navbar__col__right">
           <p class="navbar__phone">(303) 555-0105</p>
-          <div class="navbar__lang">
-            <span class="navbar__lang__en">EN</span>
-            <span class="navbar__lang__es">CL</span>
-            <img class="navbar__lang__icon" src="./assets/triangle.svg" alt="triangle arrow">
-          </div>
+          <select name="select" class="navbar__lang">
+            <option value="english" selected>EN</option>
+            <option value="spanish">CL</option>
+          </select>
         </div>
 
         <div class="navbar__menu__icons">
@@ -61,7 +61,7 @@
           </div>
 
           <div>
-            <a class="btn__primary" href="#">GET STARTED</a>
+            <a class="btn__primary" href="#plans">GET STARTED</a>
           </div>
         </div>
 
@@ -73,7 +73,7 @@
   </header>
 
   <!-- ABOUT -->
-  <section class="about">
+  <section id="about" class="about">
     <div class="about__container">
       <div class="about__col__left">
         <h2 class="about__heading">About <span>Studio</span></h2>
@@ -92,7 +92,6 @@
           possible. We listen to your needs, ideas, and inputs. And most importantly, we make it exciting and enjoyable
           for our clients.
         </p>
-        <p class="about__read-more">READ MORE</p>
       </div>
     </div>
   </section>
@@ -157,7 +156,7 @@
         </div>
       </div>
 
-      <a href="#" class="btn__primary">FREE CONSULTATION</a>
+      <a href="#footer" class="btn__primary">FREE CONSULTATION</a>
     </div>
   </section>
 
@@ -424,7 +423,7 @@
   <section id="cta" class="cta">
     <div class="cta__container">
       <h2 class="cta__heading">Do you have <span>any question?</span></h2>
-      <a href="#none" class="btn__primary">ORDER A CALL</a>
+      <a href="#footer" class="btn__primary">ORDER A CALL</a>
     </div>
   </section>
 
@@ -434,7 +433,9 @@
 
       <div class="footer__left">
         <div class="logo">
-          <img src="./assets/logo.svg" alt="logo image">
+          <a href="#">
+            <img src="./assets/logo.svg" alt="logo image">
+          </a>
         </div>
         <div class="footer__copy">
           We are one of the leading interior design and remodeling studios available for all of your residential and
@@ -446,11 +447,11 @@
       <div class="footer__center">
         <ul class="footer__menu">
           <h3 class="footer__menu__heading">NAVIGATION</h3>
-          <li class="footer__menu__item"><a class="footer__menu__link" href="#">About</a></li>
-          <li class="footer__menu__item"><a class="footer__menu__link" href="#">Services</a></li>
-          <li class="footer__menu__item"><a class="footer__menu__link" href="#">Portfolio</a></li>
-          <li class="footer__menu__item"><a class="footer__menu__link" href="#">Pricing</a></li>
-          <li class="footer__menu__item"><a class="footer__menu__link" href="#">Testimonials</a></li>
+          <li class="footer__menu__item"><a class="footer__menu__link" href="#about">About</a></li>
+          <li class="footer__menu__item"><a class="footer__menu__link" href="#services">Services</a></li>
+          <li class="footer__menu__item"><a class="footer__menu__link" href="#portfolio">Portfolio</a></li>
+          <li class="footer__menu__item"><a class="footer__menu__link" href="#plans">Pricing</a></li>
+          <li class="footer__menu__item"><a class="footer__menu__link" href="#testimonials">Testimonials</a></li>
         </ul>
         <ul class="footer__rrss">
           <li><img src="./assets/twitter.svg" alt="twitter logo"></li>

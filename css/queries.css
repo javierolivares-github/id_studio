@@ -1,0 +1,33 @@
+/*************************************** 
+TABLET VIEW - 900PX
+***************************************/
+@media screen and (max-width: 56.25em) {
+
+  /********************* 
+  TABLET VIEW - NAVBAR
+  **********************/
+  .navbar__container {
+    max-width: 83.6rem;
+    width: 100%;
+  }
+
+  .navbar__menu {
+    display: none;
+  }
+
+  .navbar__phone {
+    display: none;
+  }
+
+  .navbar__lang {
+    display: none;
+  }
+
+  .navbar__menu__icons {
+    display: block;
+  }
+
+  /* HEREEE */
+
+
+}

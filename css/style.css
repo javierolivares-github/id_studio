@@ -195,33 +195,10 @@ DESKTOP - NAVBAR
 }
 
 .navbar__lang {
-  max-width: 4.8rem;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 0.8rem;
-  cursor: pointer;
-}
-
-/* NAVBAR LANG LOGIC */
-.navbar__lang__en.hide {
-  display: none;
-  transition: all 150ms ease;
-}
-
-.navbar__lang__es {
-  display: none;
-  transition: all 150ms ease;
-}
-
-.navbar__lang__es.show {
-  display: block;
-  transition: all 150ms ease;
-}
-
-.navbar__lang__icon.rotate {
-  transform: rotateX(180deg);
+  border: none;
+  background-color: transparent;
+  font: var(--body-med);
+  color: var(--black-1);
 }
 
 .navbar__menu__icons {
@@ -731,20 +708,27 @@ DESKTOP - TESTIMONIALS
 
 .testimonials__buttons {
   display: flex;
+  height: 1.8rem;
   gap: 1.6rem;
+  align-items: center;
+  justify-content: center;
   align-self: center;
 }
 
 .testimonials__button {
-  width: 1.6rem;
-  height: 1.6rem;
+  width: 1.2rem;
+  height: 1.2rem;
   border-radius: 100px;
   background-color: var(--gray-1);
   cursor: pointer;
+  transition: all 150ms ease;
 }
 
 .testimonials__button.current {
   background-color: var(--gold-1);
+  width: 1.8rem;
+  height: 1.8rem;
+  transition: all 150ms ease;
 }
 
 /* CALL TO ACTION */
