@@ -7,9 +7,32 @@ const plansCardsButtons = document.querySelectorAll(".plans__card .btn__secondar
 const testimonialsCardsWrapper = document.querySelector(".testimonials__cards");
 const testimonialsCards = [...document.querySelectorAll(".testimonials__card")];
 const testimonialsButtons = [...document.querySelectorAll(".testimonials__button")];
+const navbarMenuIcons = document.querySelector('.navbar__menu__icons');
+const menuIcon = document.querySelector(".menu-outline");
+const closeIcon = document.querySelector(".close-outline");
+const navbarMenu = document.querySelector(".navbar__menu");
 
 
-// EVENTS
+
+// EVENT - NAVBAR MOBILE MENU
+// Al dar click al icono menu se despliega el menu
+navbarMenuIcons.addEventListener('click', toggleMenu);
+navbarLinks.forEach(link => {
+  link.addEventListener('click', closeMenu);
+})
+
+// FUNCTION
+function toggleMenu() {
+  menuIcon.classList.toggle('hide');
+  closeIcon.classList.toggle('show');
+  navbarMenu.classList.toggle('active');
+}
+
+function closeMenu() {
+  navbarMenu.classList.remove('active');
+}
+
+// EVENT - PLANS CARD
 // Agrega un evento de click a cada tarjeta y activa una funcion para destacar la tarjeta
 plansCards.forEach(card => {
   card.addEventListener("click", function () {
@@ -34,7 +57,7 @@ plansCards.forEach(card => {
   })
 })
 
-
+// EVENT - PORTFOLIO MENU
 // Agrega un evento de click a cada elemento del menu de la sección portafolio y corre una función
 portfolioMenuItems.forEach(item => {
   item.addEventListener("click", () => {
@@ -62,7 +85,7 @@ portfolioMenuItems.forEach(item => {
   })
 })
 
-
+// FUNCTION
 // Function to create a Layout for all images
 const getAllImages = async () => {
   const res = await fetch(urlPortfolioDB);
@@ -145,8 +168,11 @@ const getOfficeImages = async () => {
 }
 
 
-// TESTIMONIALS
+// TESTIMONIALS SLIDER
 // Logic to create a card slider
+let testiCardsWidth = testimonialsCardsWrapper.clientWidth;
+let bodyWidth = document.querySelector('body').clientWidth;
+let cardWidth = testimonialsCards[0].clientWidth;
 let testiCardIndex = 0;
 let buttonIndex = 0;
 let testiCardInterval = setInterval(runCardInterval, 3000);
@@ -169,7 +195,19 @@ function changeTestiCard() {
     testiCardIndex = testimonialsCards.length - 4;
   }
 
-  testimonialsCardsWrapper.style.transform = `translateX(-${testiCardIndex * 1236}px)`;
+  if (bodyWidth > 1250) {
+    testimonialsCardsWrapper.style.transform = `translateX(-${testiCardIndex * (1204 + 32)}px)`;
+  } else if (bodyWidth < 1250 && bodyWidth > 420) {
+    testimonialsCardsWrapper.style.transform = `translateX(-${testiCardIndex * (cardWidth + 32)}px)`;
+    testimonialsCards[3].style.display = 'none'
+    testimonialsCards[4].style.display = 'none'
+    testimonialsCards[5].style.display = 'none'
+  } else if (bodyWidth < 420) {
+    testimonialsCardsWrapper.style.transform = `translateX(-${testiCardIndex * (cardWidth + 32)}px)`;
+    testimonialsCards[3].style.display = 'none'
+    testimonialsCards[4].style.display = 'none'
+    testimonialsCards[5].style.display = 'none'
+  }
 }
 
 function changeButton() {
@@ -203,7 +241,11 @@ testimonialsButtons.forEach((button, index) => {
     changeButton();
     resetInteval();
   })
-})
+});
+
+
+
+
 
 
 

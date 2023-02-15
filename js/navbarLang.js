@@ -1,10 +1,12 @@
 // VARIABLES
 const navbarLang = document.querySelector(".navbar__lang");
+const navbarLangMobile = document.querySelector(".navbar__lang__mobile");
+const navbarItemMobile = document.querySelector(".navbar__item__mobile span");
 const navbarLangEn = document.querySelector(".navbar__lang__en");
 const navbarLangEs = document.querySelector(".navbar__lang__es");
 const navbarLangIcon = document.querySelector(".navbar__lang__icon");
 const navbarPhone = document.querySelector(".navbar__phone");
-const navbarLinks = document.querySelectorAll(".navbar__link");
+const navbarLinks = [...document.querySelectorAll(".navbar__link")];
 const heroTitle = document.querySelector(".hero__title");
 const heroCopy = document.querySelector(".hero__copy");
 const heroBtn = document.querySelector(".hero__content .btn__primary")
@@ -39,12 +41,14 @@ const languagesDB__URL = "../languagesDB.json";
 
 
 // ESCUCHAS DE EVENTO
-navbarLang.addEventListener('change', navbarLangToggle);
+// Agrega un evento onChange al selector de idiomas y corre una función para cambiar el idioma de la página.
+navbarLang.addEventListener('change', changeLanguage);
+navbarLangMobile.addEventListener('change', changeLangFromMobile);
 
 
 // FUNCIONES
 // Función para animar el cambio de idioma en el navbar
-function navbarLangToggle() {
+function changeLanguage() {
   const index = navbarLang.selectedIndex;
   const selectedOption = navbarLang.options[index].value;
 
@@ -58,8 +62,26 @@ function navbarLangToggle() {
     default:
       englishContent();
   }
-
 }
+
+function changeLangFromMobile() {
+  const index = navbarLangMobile.selectedIndex;
+  const selectedOption = navbarLang.options[index].value;
+
+  switch (selectedOption) {
+    case 'spanish':
+      spanishContent();
+      break;
+    case 'english':
+      englishContent();
+      break;
+    default:
+      englishContent();
+  }
+}
+
+
+
 
 // Función para crear una UI en Español
 const spanishContent = async () => {
@@ -72,6 +94,7 @@ const spanishContent = async () => {
   navbarLinks[1].textContent = `${spanishDB.navbarLinks__1}`;
   navbarLinks[2].textContent = `${spanishDB.navbarLinks__2}`;
   navbarPhone.textContent = `${spanishDB.navbarPhone}`;
+  navbarItemMobile.innerHTML = `${spanishDB.navbarItemMobile}`;
   // HERO
   heroTitle.textContent = `${spanishDB.heroTitle}`;
   heroCopy.textContent = `${spanishDB.heroCopy}`;
@@ -169,6 +192,7 @@ const englishContent = async () => {
   navbarLinks[1].textContent = `${englishDB.navbarLinks__1}`;
   navbarLinks[2].textContent = `${englishDB.navbarLinks__2}`;
   navbarPhone.textContent = `${englishDB.navbarPhone}`;
+  navbarItemMobile.innerHTML = `${englishDB.navbarItemMobile}`;
   // HERO
   heroTitle.textContent = `${englishDB.heroTitle}`;
   heroCopy.textContent = `${englishDB.heroCopy}`;
