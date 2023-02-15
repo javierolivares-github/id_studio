@@ -722,6 +722,7 @@ DESKTOP - TESTIMONIALS
 .testimonials__card__body {
   font: var(--lead);
   color: var(--black-1);
+  width: 100%;
 }
 
 .testimonials__buttons {
