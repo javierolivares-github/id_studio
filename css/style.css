@@ -658,6 +658,7 @@ DESKTOP - TESTIMONIALS
 
 .testimonials__card {
   width: 58.6rem;
+  height: 100%;
   flex: 0 0 auto;
   border-radius: 0.8rem;
   display: flex;
