@@ -85,15 +85,22 @@ portfolioMenuItems.forEach(item => {
   })
 })
 
-// FUNCTION
+// FUNCTION - PORTFOLIO IMAGES
 // Function to create a Layout for all images
 const getAllImages = async () => {
   const res = await fetch(urlPortfolioDB);
   const data = await res.json();
 
-  // Create a layout for every item
-  let allImagesUI = "";
+  // Create a Placeholder Layout for every item comes from DB
+  let placeholderImageUI = "";
+  data.forEach(item => {
+    placeholderImageUI += `
+      <div class="portfolio__image__wrapper placeholder__image"></div>
+    `
+  });
 
+  // Create a layout for every item comes from DB
+  let allImagesUI = "";
   data.forEach(item => {
     allImagesUI += `
       <div class="portfolio__image__wrapper">
@@ -103,9 +110,14 @@ const getAllImages = async () => {
   });
 
   // Create an output
-  portfolioImagesEl.innerHTML = allImagesUI;
+  portfolioImagesEl.innerHTML = placeholderImageUI;
+
+  setTimeout(() => {
+    portfolioImagesEl.innerHTML = allImagesUI;
+  }, 400);
 }
 
+// FUNCTION - PORTFOLIO IMAGES
 // Function to create a Layout for commercial images
 const getCommercialImages = async () => {
   const res = await fetch(urlPortfolioDB);
@@ -114,9 +126,16 @@ const getCommercialImages = async () => {
   // Filter by commercial data
   let commercialData = data.filter(item => item.type === "Commercial");
 
-  // Create a layout for every item
-  let commercialImagesUI = "";
+  // Create a Placeholder Layout for every item in the DB
+  let placeholderImageUI = "";
+  commercialData.forEach(item => {
+    placeholderImageUI += `
+      <div class="portfolio__image__wrapper placeholder__image"></div>
+    `
+  });
 
+  // Create a layout for every item comes from DB
+  let commercialImagesUI = "";
   commercialData.forEach(item => {
     commercialImagesUI += `
     <div class="portfolio__image__wrapper">
@@ -126,16 +145,30 @@ const getCommercialImages = async () => {
   });
 
   // Create an output
-  portfolioImagesEl.innerHTML = commercialImagesUI;
+  portfolioImagesEl.innerHTML = placeholderImageUI;
+
+  setTimeout(() => {
+    portfolioImagesEl.innerHTML = commercialImagesUI;
+  }, 400);
 }
 
+// FUNCTION - PORTFOLIO IMAGES
 // Function to create a Layout for residential images
 const getResidentialImages = async () => {
   const res = await fetch(urlPortfolioDB);
   const data = await res.json();
   // Filter by residential data from DB
   let residentialData = data.filter(item => item.type === "Residential");
-  // Create a Layout for every item
+
+  // Create a Placeholder Layout for every item in the DB
+  let placeholderImageUI = "";
+  residentialData.forEach(item => {
+    placeholderImageUI += `
+      <div class="portfolio__image__wrapper placeholder__image"></div>
+    `
+  });
+
+  // Create a Layout for every item comes from DB
   let residentialImagesUI = "";
   residentialData.forEach(item => {
     residentialImagesUI += `
@@ -145,16 +178,30 @@ const getResidentialImages = async () => {
     `
   });
   // Create an output
-  portfolioImagesEl.innerHTML = residentialImagesUI;
+  portfolioImagesEl.innerHTML = placeholderImageUI;
+
+  setTimeout(() => {
+    portfolioImagesEl.innerHTML = residentialImagesUI;
+  }, 400);
 }
 
+// FUNCTION - PORTFOLIO IMAGES
 // Function to create a Layout for office images
 const getOfficeImages = async () => {
   const res = await fetch(urlPortfolioDB);
   const data = await res.json();
   // Filter by office images
   let officesData = data.filter(item => item.type === "Office");
-  // Create a Layout for every item
+
+  // Create a Placeholder Layout for every item in the DB
+  let placeholderImageUI = "";
+  officesData.forEach(item => {
+    placeholderImageUI += `
+      <div class="portfolio__image__wrapper placeholder__image"></div>
+    `
+  });
+
+  // Create a Layout for every item comes from DB
   let officeImagesUI = "";
   officesData.forEach(item => {
     officeImagesUI += `
@@ -164,8 +211,15 @@ const getOfficeImages = async () => {
     `
   });
   // Create an output in the DOM
-  portfolioImagesEl.innerHTML = officeImagesUI;
+  portfolioImagesEl.innerHTML = placeholderImageUI;
+
+  setTimeout(() => {
+    portfolioImagesEl.innerHTML = officeImagesUI;
+  }, 400);
 }
+
+// INITIALIZATIONS
+getAllImages();
 
 
 // TESTIMONIALS SLIDER

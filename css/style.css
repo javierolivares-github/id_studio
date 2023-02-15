@@ -470,6 +470,21 @@ DESKTOP - PORTFOLIO
   transition: all 200ms ease;
 }
 
+.placeholder__image {
+  background-color: var(--gray-2);
+  animation: bgColor 1s ease-out infinite;
+}
+
+@keyframes bgColor {
+  0% {
+    background-color: var(--gray-2);
+  }
+
+  100% {
+    background-color: var(--gray-3);
+  }
+}
+
 /**************************** 
 PLANS - DESKTOP VIEW 
 ****************************/

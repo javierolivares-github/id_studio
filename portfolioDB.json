@@ -1,42 +1,82 @@
 [
   {
     "id": 1,
-    "path": "./assets/portfolio/img-1.jpg",
-    "type": "Commercial"
+    "path": "./assets/portfolio/img-1--692.png",
+    "type": "Residential"
   },
   {
     "id": 2,
-    "path": "./assets/portfolio/img-2.jpg",
-    "type": "Commercial"
+    "path": "./assets/portfolio/img-2--692.png",
+    "type": "Residential"
   },
   {
     "id": 3,
-    "path": "./assets/portfolio/img-3.jpg",
-    "type": "Commercial"
+    "path": "./assets/portfolio/img-3--692.png",
+    "type": "Residential"
   },
   {
     "id": 4,
-    "path": "./assets/portfolio/img-4.jpg",
+    "path": "./assets/portfolio/img-4--692.png",
     "type": "Residential"
   },
   {
     "id": 5,
-    "path": "./assets/portfolio/img-5.jpg",
+    "path": "./assets/portfolio/img-5--692.png",
     "type": "Residential"
   },
   {
     "id": 6,
-    "path": "./assets/portfolio/img-6.jpg",
-    "type": "Office"
+    "path": "./assets/portfolio/img-6--692.png",
+    "type": "Residential"
   },
   {
     "id": 7,
-    "path": "./assets/portfolio/img-7.jpg",
-    "type": "Office"
+    "path": "./assets/portfolio/coffeeshop-1--692.png",
+    "type": "Commercial"
   },
   {
     "id": 8,
-    "path": "./assets/portfolio/img-8.jpg",
+    "path": "./assets/portfolio/restaurant-1--692.png",
+    "type": "Commercial"
+  },
+  {
+    "id": 9,
+    "path": "./assets/portfolio/restaurant-2--692.png",
+    "type": "Commercial"
+  },
+  {
+    "id": 10,
+    "path": "./assets/portfolio/restaurant-3--692.png",
+    "type": "Commercial"
+  },
+  {
+    "id": 11,
+    "path": "./assets/portfolio/restaurant-4--692.png",
+    "type": "Commercial"
+  },
+  {
+    "id": 12,
+    "path": "./assets/portfolio/office-1--692.png",
+    "type": "Office"
+  },
+  {
+    "id": 13,
+    "path": "./assets/portfolio/office-2--692.png",
+    "type": "Office"
+  },
+  {
+    "id": 14,
+    "path": "./assets/portfolio/office-3--692.png",
+    "type": "Office"
+  },
+  {
+    "id": 15,
+    "path": "./assets/portfolio/office-4--692.png",
+    "type": "Office"
+  },
+  {
+    "id": 16,
+    "path": "./assets/portfolio/office-5--692.png",
     "type": "Office"
   }
 ]
